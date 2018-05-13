@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family:georgia; background-image: url("signup.jpg");color:#47444f;}
+*{box-sizing: border-box;; color:#d7d1d1;}
+input[type=text], input[type=password] ,input[type=date]{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #c6d4e6;
+}
+input[type=radio]{width:20%;font-size:1vw;margin:10px 0 20px 0; }
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ffffff;
+    outline: none;
+}
+
+hr {
+    border: 2px solid red;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #373d88;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f50606;
+}
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.container {
+    padding: 16px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.portion {width:50%; float:left;height:70%; }
+@media screen and (max-width: 700px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+    .portion {width:100%;}
+
+}
+</style>
+<body>
+        <h1>Sign Up</h1>
+<form>
+    <div class="portion"> <div class="container">
+    <legend>ID details</legend>
+ 
+    <p>Nesssery details for account creation </p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+  </div>
+</form> </div>
+<form>
+
+    <div class="container">   <div class="portion">
+        <legend>Personal details</legend>
+    <p> Personal details for account creation</p>
+    <hr>
+    <label for="Fname">First name</label>
+    <input type="text" name="Fname" placeholder="First name" required>
+    <label for="Lname">Last name</label>
+    <input type="text" name="Lname" placeholder="Last name" required>
+    <label for="DOB">Date of birth</label>
+    <input type="date" name="DOB" required>
+    <label for="gender">Gender</label><br>
+   Male <input type="radio" name="Male" id="M">
+   Female <input type="radio" name="FeMale" id="F"><br><br>
+   <label for="contact">Any contact number</label>
+   <input type="text" name="number" placeholder="contact number" required>
+</div></form>
+</div>
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+</body>
+</html>

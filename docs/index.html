@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family:georgia; background-image: url("login.jpg");color:#47444f;font-size:30px;}
+*{box-sizing: border-box;; color:#d7d1d1;}
+input[type=text], input[type=password] ,input[type=date]{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #c6d4e6;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ffffff;
+    outline: none;
+}
+
+hr {
+    border: 2px solid red;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #373d88;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    margin-left:25%;
+}
+
+button:hover {
+    opacity:1;
+}
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+.container {
+    padding: 16px;
+    margin-top: 10%;
+    margin-left: 25%;
+    width:50%;
+    height:60%;
+    align-content: center;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.portion {width:50%; float:left;height:70%; }
+.newv {float:right; margin-top:10%;}
+@media screen and (max-width: 700px) {
+    .signupbtn {
+       width: 100%;margin-left:0;
+    }
+    .container {width:100%;margin-left: 0;}
+    body {font-size:20px;}
+
+}
+</style>
+<body>
+    <div class="container">
+        <h1 align="center"> LOGIN TO YOUR ACCOUNT</h1>
+        <form>
+            <label for="uname">Username</label>
+            <input type="text" name="Username" id="uname" required>
+            <label for="pwd">Password</label>
+            <input type="password" name="password" id="pwd" required>
+        </form>
+    </div>
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">LOGIN</button></div>
+
+      <div class="newv">
+        DON'T HAVE AN ID?
+        <BR>
+        <a href="signup.html" style="color:blue;">SIGNUP HERE</a></div>
+</body>
+</html>
